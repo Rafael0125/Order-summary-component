@@ -18,17 +18,19 @@
 body{
     font-size: 16px;
     font-family: 'redHat';
+    background: hsl(224, 23%, 55%);
 }
 
 /* Container */
 #container{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     border-radius: 1em;
     margin: auto;
     align-items: center;
     width: 374px;
+    background: #fff;
+    border: 1px solid hsl(224, 23%, 55%);;
 }
 /* Cabeçalho */
 header{
@@ -43,7 +45,6 @@ header{
 main{
     text-align: center;
     padding: 2em;
-    border: 1px solid blue;
 }
 
 /*Titulo*/
@@ -63,19 +64,23 @@ main{
     background: hsl(225, 100%, 98%);
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+#campo-interno{
+    display: flex;
+    margin-right: 1rem;
 }
 
 #image-nota{
-    border: 1px solid green;
     display: flex;
     padding: 0.3em;
     font-weight: 600;
-    margin: auto;
 }
 
 #plano{
     padding: 0.5rem;
-    border: 1px solid red;
     text-align: left;
 }
 
@@ -89,8 +94,38 @@ main{
     font-family: "redHatItalico";
 }
 
-/**/
+/*Botão*/
+#botao{
+    display: flex;
+    flex-direction: column;
+}
 
+#botao button{
+    margin: .2rem;
+    padding: .7rem;
+    border-radius: .3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+    /*Botao payment*/
+        #payment{
+            border: 1px solid hsl(223, 47%, 23%);
+            background: hsl(223, 47%, 23%);
+            color: #fff;
+        }
+        #payment:hover{
+            background: hsl(224, 23%, 55%);
+            border: 1px solid hsl(224, 23%, 55%);
+        }
+    /*Botao cancel*/
+        #cancel{
+            border: none;
+            background: #fff;
+            color: #c1c1c1;
+        }
+        #cancel:hover{
+            color: #000;
+        }
 /**/
 
 /**/
